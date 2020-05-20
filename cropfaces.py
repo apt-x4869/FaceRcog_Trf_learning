@@ -20,6 +20,8 @@ def facecrop(image):
         sub_face = img[y:y+h, x:x+w]
         fname, ext = os.path.splitext(image)
         cv2.imshow('img',sub_face)
+        # Enter to Save Images
+        # If anyother key will be pressed then Image will be discarded
         if cv2.waitKey() == 120:
             pass
         else:
